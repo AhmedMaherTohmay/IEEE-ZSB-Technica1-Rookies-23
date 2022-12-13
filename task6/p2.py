@@ -2,11 +2,11 @@ arr1 = list(map(int, input().split()))
 arr2 = list(map(int, input().split()))
 p = []
 d, m, y = 0, 0, 0
-for i in reversed(range(3)):
+for i in reversed(range(3)): # substracting to get the remaining days, months and years
     c = arr1[i] - arr2[i]
     p.append(c)
 
-if(p[0] > 0):
+if(p[0] > 0):                   # Instead of using for loops I just made it manually (:
     print(int(p[0]) * 10000)
 else:
     y += 1
