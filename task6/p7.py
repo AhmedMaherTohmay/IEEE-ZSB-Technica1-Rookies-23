@@ -2,8 +2,8 @@ import os
 
 def beautifulTriplets(d, arr):
     cnt=0
-    for i in arr:
-        for j in arr:
+    for i in arr:                     # if d = 2 and the substract of two elemts is eual to d (3 - 1 = 2) propaply their are triplets    
+        for j in arr:                 # to make sure we add d to the seconed element ( 3 + 2 = 5 ) and search for it (5)
             if(j - i == d):
                 if((j + d) in arr):
                     cnt += 1           
